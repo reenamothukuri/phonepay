@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .parent, .container, .images, .overall-sales {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .parent img, .container img, .images img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .Money-Transfer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .Money-Transfer .content, .Money-Transfer .video {
+            width: 100%;
+            text-align: center;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .images a {
+            margin: 0 10px;
+        }
+
+        .overall-sales {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .overall-sales .sales {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .business {
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Media Queries */
+        @media(max-width: 1200px) {
+            .overall-sales {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .business {
+                margin: 20px auto;
+                max-width: 90%;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar a {
+                margin: 5px 0;
+            }
+
+            .Money-Transfer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .overall-sales {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .images {
+                flex-direction: column;
+            }
+
+            .images a {
+                margin: 10px 0;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .navbar a {
+                font-size: 14px;
+            }
+
+            .Money-Transfer {
+                padding: 10px;
+            }
+
+            .images img {
+                width: 80%;
+            }
+
+            .overall-sales .sales img {
+                width: 90%;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .navbar a {
+                font-size: 12px;
+                padding: 3px 6px;
+            }
+
+            .images img {
+                width: 100%;
+            }
+
+            .overall-sales .sales img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-phonepe-2709167-2249157.png" alt="PhonePe" />
+        </a>
+        <a href="#">BUSINESS SOLUTIONS</a>
+        <a href="#">PRESS</a>
+        <a href="#">CAREERS</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">TRUST & SAFETY</a>
+    </nav>
+
+    <div class="parent">
+        <a href="#"><img src="img1.jpg" alt="Image 1" /></a>
+    </div>
+    <div class="container">
+        <a href="#"><img src="img2.jpg" alt="Image 2" /></a>
+    </div>
+    <div class="container">
+        <a href="#"><img src="img3.jpg" alt="Image 3" /></a>
+    </div>
+
+    <div class="Money-Transfer">
+        <div class="content">
+            <h1>Simple, Fast, and Secure</h1>
+            <h1>One app for all things money.</h1>
+            <p>Pay bills, recharge, send money, buy gold, invest, and shop at your favorite stores.</p>
+            <hr>
+            <h1>Pay whenever you like, wherever you like.</h1>
+            <p>Choose from options like UPI, the PhonePe wallet, or your Debit and Credit Card.</p>
+            <hr>
+            <h1>Find all your favorite apps on PhonePe Switch.</h1>
+            <p>Book flights, order food, or buy groceries. Use all your favorite apps without downloading them.</p>
+            <hr>
+        </div>
+        <div class="video">
+            <a href="#">
+                <video src="https://www.phonepe.com/webstatic/7669/videos/page/home-fast-secure-v3.mp4" controls></video>
+            </a>
+        </div>
+    </div>
+
+    <div class="images">
+        <a href="#"><img src="https://www.phonepe.com/webstatic/7673/static/4a61ea7c648229cda71b85e3a5a06fca/4087d/nt_insurance.png" alt="Insurance" /></a>
+        <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-256/free-phonepe-2709167-2249157.png" alt="PhonePe" /></a>
+        <a href="#"><img src="https://www.phonepe.com/webstatic/7673/static/c78a0fbf793d7eb11f5c7ed4447910c4/62b1f/nt_thumb_3.png" alt="Thumb" /></a>
+    </div>
+
+    <div class="overall-sales">
+        <div class="sales">
+            <a href="#"><img src="https://www.phonepe.com/webstatic/7888/static/cfb480f27dda7ed0b0d48ec775dd2b1f/fca2e/sales-anim.png" alt="Sales Animation" /></a>
+        </div>
+        <div class="business">
+            <div class="content">
+                <h1>For Business</h1>
+                <p>Find the digital payment solution that fits your business needs</p>
+                <h1>I want to:</h1>
+                <h3>Be on PhonePe Switch</h3>
+                <p>Get new users for your app</p>
+                <hr>
+                <h3>Accept payments at stores</h3>
+                <p>Help your business go cashless</p>
+                <hr>
+                <h3>Integrate PhonePe Payment Gateway</h3>
+                <p>Process online payments seamlessly</p>
+                <hr>
+                <h3>Advertise on PhonePe</h3>
+                <p>Advertise & let customers know about you</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
